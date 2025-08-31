@@ -21,6 +21,7 @@ export const styles = StyleSheet.create({
   boxLogin: {
     flex: 1,
     width: "100%",
+    marginLeft: 50,
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
@@ -28,6 +29,7 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 70,
     borderTopRightRadius: 0,
     backgroundColor: Colors.amareloQueimado,
+    
   },
 
   title: {
