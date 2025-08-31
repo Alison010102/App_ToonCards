@@ -1,37 +1,46 @@
 import React from "react";
-import { View, Text, TextInput, Pressable } from "react-native";
+import { View, Text, TextInput, Pressable, Image, TouchableOpacity } from "react-native";
 import { styles } from "./login.styles";
+import { Colors } from "../../styles/colors";
 
 export function Login() {
   return (
     <View style={styles.container}>
-      {/* <image source={require("../../../assets/logo.png")} /> */}
-
-      <Text style={styles.title}>Faça Login</Text>
-      <TextInput style={styles.formImput} 
-        placeholder="Email"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoComplete="email"
-      />
-      <TextInput style={styles.formImput}
-        placeholder="Password"
-        autoCapitalize="none"
-        secureTextEntry={true}
+      <Image
+        style={styles.imgEl}
+        source ={require("../../../assets/inicio.png")}
       />
 
-      <Pressable style={styles.formBtn}>
-        <Text style={styles.textBtn}>Logar</Text>
-      </Pressable>
 
-      <View style={styles.boxForgotRegister}>
-        <Pressable>
-          <Text style={styles.text}>Esqueci a senha</Text>
-        </Pressable>
+      <View style={styles.boxLogin} >
+        <Text style={styles.title}>Login</Text>
+        <TextInput style={styles.formImput} 
+          placeholder="Email"
+          placeholderTextColor={Colors.segundaMaisEscura}
+          keyboardType="email-address"
+          autoCapitalize="none"
+          autoComplete="email"
+        />
+        <TextInput style={styles.formImput}
+          placeholder="Password"
+          placeholderTextColor={Colors.segundaMaisEscura}
+          autoCapitalize="none"
+          secureTextEntry={true}
+        />
 
-        <Pressable>
-          <Text style={styles.text}>Quero me cadastrar</Text>
-        </Pressable>
+        <TouchableOpacity style={styles.formBtn}>
+          <Text style={styles.textBtn}>Login</Text>
+        </TouchableOpacity>
+
+        <View style={styles.boxForgotRegister}>
+          <TouchableOpacity>
+            <Text style={styles.texForgotRegister}>Esqueci a senha</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <Text style={styles.texForgotRegister}>Quero me cadastrar</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
