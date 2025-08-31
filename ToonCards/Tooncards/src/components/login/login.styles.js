@@ -20,8 +20,8 @@ export const styles = StyleSheet.create({
 
   boxLogin: {
     flex: 1,
-    width: "100%",
-    marginLeft: 50,
+    width: 400,
+    
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
@@ -49,11 +49,12 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     borderWidth: 1,
     borderColor: Colors.segundaMaisEscura,
-    color: Colors.amareloQueimado,
+    color: "black",
     borderRadius: 15,
     padding: 15,
     margin: 10,
     width: "95%",
+    
   },
 
   formBtn: {
