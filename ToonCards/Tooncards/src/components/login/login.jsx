@@ -8,7 +8,7 @@ export function Login() {
     <View style={styles.container}>
       <Image
         style={styles.imgEl}
-        source ={require("../../../assets/inicio.png")}
+        source ={require("../../../assets/perfil.png")}
       />
 
 

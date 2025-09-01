@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.corMaisEscura,
     alignItems: "center",
     justifyContent: "flex-start", // <- muda para alinhar no topo
-    padding: 20,
   },
 
   imgEl: {
@@ -16,11 +15,13 @@ export const styles = StyleSheet.create({
     marginTop: 50, // espaço do topo
     borderRadius: 60,
     resizeMode: "cover",
+    textAlign: "center",
+    
   },
 
   boxLogin: {
     flex: 1,
-    width: 400,
+    width: "100%",
     
     alignItems: "center",
     justifyContent: "center",
@@ -28,7 +29,7 @@ export const styles = StyleSheet.create({
     marginTop: 150, // distância entre a imagem e a view
     borderTopLeftRadius: 70,
     borderTopRightRadius: 0,
-    backgroundColor: Colors.amareloQueimado,
+    backgroundColor: Colors.corBranca,
     
   },
 
@@ -60,7 +61,7 @@ export const styles = StyleSheet.create({
   formBtn: {
     fontSize: 22,
     borderWidth: 1,
-    backgroundColor: Colors.corMaisEscura,
+    backgroundColor: Colors.amareloQueimado,
     borderRadius: 15,
     padding: 10,
     margin: 10,

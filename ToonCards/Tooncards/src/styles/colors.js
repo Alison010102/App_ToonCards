@@ -4,6 +4,6 @@ export const Colors = {
     amareloQueimado: '#E7BD52',
     cinzaClaro: '#B6BDB6',
     cinzaEscuro: '#A1ADAF',
-    corBranca: '#ffffff',
+    corBranca: '#ffffffff',
     corPreta: '#000000'
 }
