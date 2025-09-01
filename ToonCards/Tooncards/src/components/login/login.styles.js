@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   imgEl: {
     width: 120,
     height: 120,
-    marginTop: 50, // espaço do topo
+    marginTop: 80, // espaço do topo
     borderRadius: 60,
     resizeMode: "cover",
     textAlign: "center",
@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 70,
     borderTopRightRadius: 0,
     backgroundColor: Colors.corBranca,
-    
+     elevation: 6,
   },
 
   title: {
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
 
   textBtn: {
     fontSize: 22,
-    color: Colors.cinzaEscuro,
+    color: Colors.segundaMaisEscura,
     fontWeight: "bold",
   },
 
@@ -83,7 +83,7 @@ export const styles = StyleSheet.create({
 
   texForgotRegister: {
     fontSize: 15,
-    color: Colors.amareloQueimado,
+    color: Colors.corMaisEscura,
     marginBottom: 10,
   },
 });

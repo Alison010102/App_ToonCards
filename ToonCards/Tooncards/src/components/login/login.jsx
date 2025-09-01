@@ -41,6 +41,15 @@ export function Login() {
             <Text style={styles.texForgotRegister}>Quero me cadastrar</Text>
           </TouchableOpacity>
         </View>
+        <View>
+          <TouchableOpacity style={styles.btnGoogle}>
+            <Image
+              style={styles.imgGoogle}
+              source ={require("../../../assets/google.png")}
+            />
+            <Text style={styles.textBtnGoogle}>Entrar com Google</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

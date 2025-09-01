@@ -1,30 +1,26 @@
-import { View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet } from "react-native";
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "../../src/styles/colors";
 
-export default function WelcomeScreen () {
-    return (
-        <SafeAreaView style={styles.welEl}>
-            <Text style={styles.logoWelcome}>Pronto para Iniciar?</Text>
-        </SafeAreaView>
-    );
+export default function WelcomeScreen() {
+  return (
+    <View style={styles.welEl}>
+      <Text style={styles.logoWelcome}>Pronto para Iniciar?</Text>
+    </View>
+  );
 }
-
-
 
 const styles = StyleSheet.create({
   welEl: {
     flex: 1,
-    backgroundColor: Colors.amareloQueimado, // Cor de fundo enquanto carrega
-    justifyContent: "space-around",
+    backgroundColor: Colors.amareloQueimado,
+    justifyContent: "center",
     alignItems: "center",
   },
-
   logoWelcome: {
     color: Colors.corBranca,
     fontWeight: "bold",
-    textAlign: "center"
-
-  }
+    fontSize: 22,
+    textAlign: "center",
+  },
 });
