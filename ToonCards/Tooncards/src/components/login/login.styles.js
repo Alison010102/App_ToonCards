@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     marginTop: 150, // distância entre a imagem e a view
     borderTopLeftRadius: 70,
     borderTopRightRadius: 0,
-    backgroundColor: Colors.corBranca,
+    backgroundColor: Colors.amareloQueimado,
      elevation: 6,
   },
 
@@ -42,14 +42,15 @@ export const styles = StyleSheet.create({
 
   text: {
     fontSize: 20,
-    color: Colors.amareloQueimado,
+    color: Colors.corMaisEscura,
     marginBottom: 10,
   },
 
   formImput: {
     fontSize: 15,
     borderWidth: 1,
-    borderColor: Colors.segundaMaisEscura,
+    borderColor: Colors.corMaisEscura,
+    backgroundColor: Colors.corBrancaMaisEscura,
     color: "black",
     borderRadius: 15,
     padding: 15,
@@ -60,8 +61,7 @@ export const styles = StyleSheet.create({
 
   formBtn: {
     fontSize: 22,
-    borderWidth: 1,
-    backgroundColor: Colors.amareloQueimado,
+    backgroundColor: Colors.segundaMaisEscura,
     borderRadius: 15,
     padding: 10,
     margin: 10,
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
 
   textBtn: {
     fontSize: 22,
-    color: Colors.segundaMaisEscura,
+    color: Colors.corBrancaMaisEscura,
     fontWeight: "bold",
   },
 
@@ -86,4 +86,33 @@ export const styles = StyleSheet.create({
     color: Colors.corMaisEscura,
     marginBottom: 10,
   },
+
+  alternativo: {
+    fontSize: 15,
+    color: Colors.corMaisEscura,
+    marginTop: 20,
+    marginBottom: 10,
+  },
+
+  boxSocialMidia:{
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 20,
+    width: '100%',
+    padding: 10,
+  },
+
+  iconBox:{
+    // backgroundColor: Colors.corBranca,
+    borderRadius: 50,
+    padding: 15,
+  },
+
+  icons:{
+    width: 40,
+    height: 40,
+    // resizeMode: "cover",
+    // textAlign: "center",
+  }
+
 });
