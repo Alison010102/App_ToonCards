@@ -7,5 +7,7 @@ export const Colors = {
     cinzaEscuro: '#A1ADAF',
     corBranca: '#ffffffff',
     corBrancaMaisEscura: '#f6f4f4ff',
-    corPreta: '#000000'
+    corPreta: '#000000',
+
+    corParaEfeito: "#f0ededff",
 }

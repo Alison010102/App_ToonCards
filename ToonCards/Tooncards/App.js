@@ -1,10 +1,10 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import SplashScreen from "./src/screens/SplashScreen";
+import SplashScreen from "./src/screens/splashScreen/SplashScreen";
 import { Login } from "./src/components/login/login";
-import WelcomeScreen from "./src/screens/WelcomeScreen";
-import SingUpScreen from "./src/screens/SingUpScreen";
+import WelcomeScreen from "./src/screens/welcomeScreen/WelcomeScreen";
+import SingUpScreen from "./src/screens/singUpscreen/SingUpScreen";
 import { StatusBar } from "expo-status-bar";
 
 const Stack = createNativeStackNavigator();

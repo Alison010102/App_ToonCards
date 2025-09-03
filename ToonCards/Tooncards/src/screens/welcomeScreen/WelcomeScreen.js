@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
-import { Colors } from "../../src/styles/colors";
+import { Colors } from "../../styles/colors";
 import { useNavigation } from '@react-navigation/native';
 export default function WelcomeScreen() {
   const navigation = useNavigation();
@@ -9,7 +9,7 @@ export default function WelcomeScreen() {
       <Text style={styles.logoWelcome}>Pronto para Iniciar?</Text>
       <Image
         style={{ width: "100%", height: 300, marginTop: 20, marginLeft: 15, resizeMode: "contain" }}
-        source ={require("../../assets/backgroud-pokemon.png")}
+        source ={require("../../../assets/backgroud-pokemon.png")}
       />  
 
       <View style={{alignItems: "center", marginBottom: 10, width: "100%"}}>
