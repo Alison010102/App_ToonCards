@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TextInput, Pressable, Image, TouchableOpacity } from "react-native";
 import { styles } from "./login.styles";
 import { Colors } from "../../styles/colors";
-
+import { StatusBar } from "expo-status-bar";
 export function Login() {
   return (
     <View style={styles.container}>
@@ -11,9 +11,9 @@ export function Login() {
         source ={require("../../../assets/inicio.png")}
       />
 
-
       <View style={styles.boxLogin} >
         {/* <Text style={styles.title}>Login</Text> */}
+        <View style={styles.after}></View>
         <TextInput style={styles.formImput} 
           placeholder="Email"
           placeholderTextColor={Colors.segundaMaisEscura}
@@ -63,6 +63,7 @@ export function Login() {
           </TouchableOpacity>
         </View>
       </View>
+      <StatusBar style="light" />
     </View>
   );
 }

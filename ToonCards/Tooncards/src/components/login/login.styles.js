@@ -22,15 +22,29 @@ export const styles = StyleSheet.create({
   boxLogin: {
     flex: 1,
     width: "100%",
-    
+    position: "relative",
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
     marginTop: 150, // distância entre a imagem e a view
     borderTopLeftRadius: 70,
-    borderTopRightRadius: 0,
+    borderTopRightRadius: -70,
     backgroundColor: Colors.amareloQueimado,
      elevation: 6,
+  },
+  after: {
+  width: "100%",
+  height: 0,
+  top: -70,
+  right: -15,
+  backgroundColor: "transparent",
+  borderStyle: "solid",
+  borderTopWidth: 40,
+  borderBottomWidth: 40,
+  borderRightWidth: 60,
+  borderTopColor: "transparent",
+  borderBottomColor: "transparent",
+  borderRightColor: Colors.amareloQueimado,
   },
 
   title: {
