@@ -1,8 +1,10 @@
 import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import { Colors } from '../../styles/colors';
+import { Colors } from '../../styles/colors'
+import { Dimensions } from "react-native";
 
+const { width, height } = Dimensions.get("window");
 
 export default function SingUp() {
   return (
