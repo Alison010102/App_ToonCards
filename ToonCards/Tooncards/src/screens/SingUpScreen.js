@@ -34,7 +34,7 @@ const handleCadastro = async () => {
       }),
     });
     const data = await response.json();
-    if (respomse.ok) {
+    if (response.ok) {
       Alert.alert("Usuário cadastrado com sucesso");
       navigation.navigate("login");
     }

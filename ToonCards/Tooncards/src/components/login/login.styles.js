@@ -62,8 +62,6 @@ export const styles = StyleSheet.create({
 
   formImput: {
     fontSize: 15,
-    borderWidth: 1,
-    borderColor: Colors.corMaisEscura,
     backgroundColor: Colors.corBrancaMaisEscura,
     color: "black",
     borderRadius: 15,
