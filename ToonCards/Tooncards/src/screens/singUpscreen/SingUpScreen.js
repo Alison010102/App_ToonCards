@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: "bold",
     textAlign: "center",
-    color: Colors.corBranca,
+    color: Colors.segundaMaisEscura,
   },
   boxForm: {
     display: "flex",
