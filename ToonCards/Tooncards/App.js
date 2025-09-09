@@ -6,6 +6,7 @@ import { Login } from "./src/components/login/login";
 import WelcomeScreen from "./src/screens/welcomeScreen/WelcomeScreen";
 import SingUpScreen from "./src/screens/singUpscreen/SingUpScreen";
 import { StatusBar } from "expo-status-bar";
+import Home from "./src/components/home/Home";
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,11 @@ export default function App() {
           name="SingUpScreen"
           component={SingUpScreen}
           options={{ headerShown: false }}
+        />
+          <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{hearderShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
