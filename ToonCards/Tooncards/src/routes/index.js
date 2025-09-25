@@ -16,8 +16,7 @@ import CardsScreen from "../screens/cardScreen/index";
 import ProfileScreen from "../screens/profileScreen/index"; 
 
 
-// ❌ Remova esta linha, ela estava incorreta:
-// import vectoricons from 'react-native-vector-icons/Ionicons'; 
+
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
