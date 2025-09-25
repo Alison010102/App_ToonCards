@@ -25,7 +25,15 @@ export function Login() {
       return;
     }
 
-    try {
+    if (email === "admin" && senha === "admin") {
+      Alert.alert("Sucesso", "Bem-vindo, Admin!");
+      setEmail("");
+      setSenha("");
+      navigation.navigate("Home"); // Redireciona para a Home
+      return;
+    }
+
+    /* try {
       const response = await fetch("https://back-ts-cjm8.onrender.com/users");
       const users = await response.json();
 
@@ -45,7 +53,7 @@ export function Login() {
     } catch (error) {
       console.error("Erro no login:", error);
       Alert.alert("Erro", "Não foi possível conectar ao servidor!");
-    }
+    } */
   };
 
   return (
