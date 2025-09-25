@@ -29,31 +29,20 @@ export function Login() {
       Alert.alert("Sucesso", "Bem-vindo, Admin!");
       setEmail("");
       setSenha("");
-      navigation.navigate("Home"); // Redireciona para a Home
+      
+      // 🎯 CORREÇÃO APLICADA AQUI:
+      // Navegação aninhada: Vai para o Stack 'MainApp' e define a tela Tab 'HomeTab'
+      navigation.replace('MainApp', { 
+          screen: 'HomeTab' 
+      });
+      // O 'replace' é mais adequado para login para que o usuário não possa voltar
+      // para a tela de login usando o botão Voltar do celular.
+      
       return;
     }
 
-    /* try {
-      const response = await fetch("https://back-ts-cjm8.onrender.com/users");
-      const users = await response.json();
-
-      // Procura o usuário com email e senha corretos
-      const user = users.find(
-        (u) => u.email === email && u.password === senha
-      );
-
-      if (user) {
-        Alert.alert("Sucesso", `Bem-vindo, ${user.name}!`);
-        setEmail("");
-        setSenha("");
-        navigation.navigate("Home"); // Redireciona para a Home
-      } else {
-        Alert.alert("Erro", "Email ou senha incorretos!");
-      }
-    } catch (error) {
-      console.error("Erro no login:", error);
-      Alert.alert("Erro", "Não foi possível conectar ao servidor!");
-    } */
+    // O restante do seu código 'try...catch' de API (comentado)
+    /* ... */
   };
 
   return (
@@ -95,8 +84,9 @@ export function Login() {
             <Text style={styles.texForgotRegister}>Esqueci a senha</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => navigation.navigate("Register")}>
-            <Text style={styles.texForgotRegister} onPress={() => navigation.navigate("SingUpScreen")}>Quero me cadastrar</Text>
+          {/* ⚠️ CORREÇÃO PONTUAL: Removido o onPress duplicado */}
+          <TouchableOpacity onPress={() => navigation.navigate("SingUpScreen")}> 
+            <Text style={styles.texForgotRegister}>Quero me cadastrar</Text>
           </TouchableOpacity>
         </View>
 

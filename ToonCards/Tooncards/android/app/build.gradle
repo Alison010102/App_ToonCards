@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.Tooncards'
+    namespace "com.tooncards"
     defaultConfig {
-        applicationId 'com.anonymous.Tooncards'
+        applicationId 'com.matiasdevts.Tooncards'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
