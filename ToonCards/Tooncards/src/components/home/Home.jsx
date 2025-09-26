@@ -46,8 +46,8 @@ const Home = () => {
   // Função para buscar o próximo personagem
   const goToNextCharacter = () => {
     // Você pode definir um limite superior ou simplesmente incrementar.
-    // Vou colocar um limite arbitrário de 5 para este exemplo.
-    const newId = characterId < 5 ? characterId + 1 : 1;
+    // Vou colocar um limite arbitrário de 15 para este exemplo.
+    const newId = characterId < 15 ? characterId + 1 : 1;
     setCharacterId(newId);
   };
   
