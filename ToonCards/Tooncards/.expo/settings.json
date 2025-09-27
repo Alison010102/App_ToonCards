@@ -5,6 +5,6 @@
   "https": false,
   "hostType": "lan",
   "lanType": "ip",
-  "scheme": null,
-  "devClient": false
+  "devClient": true,
+  "scheme": null
 }
