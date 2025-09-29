@@ -5,7 +5,7 @@ export const NarutoStyle = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: Colors.cinzaEscuro,
-        paddingTop: 200,
+        paddingTop: 120,
         justifyContent: 'center',
         alignItems: 'center',
     },

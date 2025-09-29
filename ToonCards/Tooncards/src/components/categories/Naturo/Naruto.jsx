@@ -59,15 +59,15 @@ const Naruto = ({ navigation }) => {
 
             <Image
               source={{ uri: characterData.profile_image || characterData.image }}
-              style={{ width: 200, height: 250, borderRadius: 15, marginBottom: 20, borderWidth: 3, borderColor: '#fff' }}
-              resizeMode="contain"
+              style={{ width: 350, height: 210, borderRadius: 15, marginBottom: 20, borderWidth: 3, borderColor: '#fff' }}
+              resizeMode="center"
             />
 
             <Text style={{ color: 'white', textAlign: 'center', marginBottom: 10 }}>
               {characterData.village && `Aldeia: ${characterData.village}`}
             </Text>
 
-            <Text style={{ color: 'white', textAlign: 'center', paddingHorizontal: 10 }}>
+            <Text style={{ color: 'white', textAlign: 'justify', paddingHorizontal: 10 }}>
               {characterData.summary}
             </Text>
           </>
