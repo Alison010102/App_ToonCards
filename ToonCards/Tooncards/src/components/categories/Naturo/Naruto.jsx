@@ -60,7 +60,7 @@ const Naruto = ({ navigation }) => {
             <Image
               source={{ uri: characterData.profile_image || characterData.image }}
               style={{ width: 350, height: 210, borderRadius: 15, marginBottom: 20, borderWidth: 3, borderColor: '#fff' }}
-              resizeMode="center"
+              resizeMode="contain"
             />
 
             <Text style={{ color: 'white', textAlign: 'center', marginBottom: 10 }}>

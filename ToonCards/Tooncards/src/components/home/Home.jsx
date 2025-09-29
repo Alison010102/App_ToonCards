@@ -62,11 +62,23 @@ const Home = ({ navigation }) => {
               {characterData.name}
             </Text>
 
-            <Image
-              source={{ uri: characterData.image }}
-              style={{ width: 300, height: 400, borderRadius: 30, marginBottom: 20, borderWidth: 3, borderColor: '#fff' }}
-              resizeMode="contain"
-            />
+            <View 
+              style={{ 
+                borderWidth: 3, 
+                borderColor: '#ffffff', 
+                borderRadius: 30,
+                marginBottom: 20, 
+                overflow: 'hidden',
+                padding: 10,
+                paddingTop: 20,
+              }}
+            >
+              <Image
+                source={{ uri: characterData.image }}
+                style={{ width: 300, height: 400, borderRadius: 30, marginBottom: 20, padding: 40 }}
+                resizeMode="contain"
+              />
+            </View>
 
             <Text style={{ color: 'white', textAlign: 'center' }}>
               **Raça:** {characterData.race} | **Gênero:** {characterData.gender}
